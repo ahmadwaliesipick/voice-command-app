@@ -1,0 +1,7 @@
+{
+  "name": "voice-cmd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
