@@ -1,20 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" style="background-color: transparent;">
+  
+  <div id="container" style="background-color: transparent;">
+    <ion-text color="secondary">
+      <h1>Control Smart Phone with Voice Command</h1>
+    </ion-text>
+    <!-- <ion-button (click)="getPermission()" color="warning">Get Permission</ion-button> -->
+
+    <ion-fab ion-long-press vertical="center" horizontal="end"  [interval]="400" slot="fixed" (click)="pressed()" (pressed)="pressed()" (longPressed)="active()" (pressEnded)="released()" > 
+      <ion-fab-button style="margin-top:50px">
+        <ion-icon name="mic"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    
   </div>
+  <!-- <ion-card *ngIf="matches">
+    <p>{{matches[0]}}</p>
+  </ion-card> -->
+
+  <!-- <ion-card>
+    <ion-card-content *ngFor="let match of matches">
+      <p>{{ match }}</p>
+    </ion-card-content>
+  </ion-card> -->
 </ion-content>
