@@ -2,6 +2,10 @@
 <widget version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <access origin="*" />
   
+  <feature name="AudioManagement">
+    <param name="android-package" value="com.cedricclovel.audiomanagement.AudioManagement"/>
+  </feature>
+
   <feature name="NativeSettings">
     <param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings"/>
   </feature>
@@ -12,6 +16,18 @@
 
   <feature name="AppAvailability">
     <param name="android-package" value="com.ohh2ahh.appavailability.AppAvailability"/>
+  </feature>
+
+  <feature name="BluetoothLePlugin">
+    <param name="android-package" value="com.randdusing.bluetoothle.BluetoothLePlugin"/>
+  </feature>
+
+  <feature name="Brightness">
+    <param name="android-package" value="org.apache.cordova.plugin.Brightness.BrightnessPlugin"/>
+  </feature>
+
+  <feature name="Flashlight">
+    <param name="android-package" value="nl.xservices.plugins.Flashlight"/>
   </feature>
 
   <feature name="InAppBrowser">
